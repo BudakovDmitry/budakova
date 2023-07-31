@@ -21,11 +21,9 @@ import subscribeBgDots from '@/public/subscribe_bg_dots.svg'
 import Link from 'next/link'
 // import Drawer from '@/app/components/Drawer/Drawer'
 // import { useEffect, useState } from 'react'
-import PreloaderPage from '@/app/components/PreloaderPage/PreloaderPage'
 
 const Home = () => {
     const isMobile = false;
-    // const [loadingPage, setLoadingPage] = useState(true)
 
     const menuItems = [
         {
