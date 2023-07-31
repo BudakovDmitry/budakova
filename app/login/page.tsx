@@ -1,6 +1,6 @@
 'use client'
 
-import { Spacer, Input, Card, Checkbox, Button, Text } from "@nextui-org/react";
+import { Spacer, Input, Card, Button } from "@nextui-org/react";
 import { UserIcon } from "./UserIcon";
 import styles from '@/styles/login.module.scss'
 
@@ -14,28 +14,23 @@ const Login = () => {
                             <div className={styles.login__logo_box}></div>
                             <div className={styles.login__logo_hill}></div>
                         </div>
-                        {/* <Text h2 css={{ textAlign: 'center' }}>Login</Text> */}
                         <Spacer y={1.5} />
                         <Input 
-                            labelPlaceholder="Login" 
+                            labelPlaceholder="Ім'я" 
                             clearable
                             contentRight={<UserIcon />} 
                         />
                         <Spacer y={1.5} />
-                        <Input.Password labelPlaceholder="Password" initialValue="" clearable />
-                        <Spacer y={1} />
-                        <Checkbox color="primary" size="sm">
-                            Primary
-                        </Checkbox>
+                        <Input.Password labelPlaceholder="Пароль" initialValue="" clearable />
                         <Spacer y={1} />
                         <Button shadow color="warning" auto>
-                            Sign In
+                            Вхід
                         </Button>
                         <Spacer y={1.5} />
-                        <p className={styles.login__divider}>or</p>
+                        <p className={styles.login__divider}>або</p>
                         <Spacer y={1.5} />
                         <Button bordered color="warning" auto>
-                            Register
+                            Зареєструватись
                         </Button>
                     </Card.Body>
                 </Card>
